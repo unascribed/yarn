@@ -8,10 +8,11 @@ A personal fork of Yarn for 1.16.5. See [FabricMC/yarn](https://github.com/Fabri
 Are you stubbornly staying 1.16.5 as well, but you want some of the newer mappings and random fixes?
 
 1. Add my repo to your repositories in build.gradle: `maven { url 'https://repo.unascribed.com' }`
-2. Run `./gradlew migrateMappings --mappings com.unascribed:yarn:1.16.5-una+build.2:v2 --output src/main/java`
+2. Run `./gradlew migrateMappings --mappings com.unascribed:yarn:1.16.5-una+build.2:v2 --output src/main/java` - change the version as necessary to the current latest (see the above badge)
 3. Change `net.fabricmc:yarn` in your build.gradle's `mappings` dependency to `com.unascribed:yarn`
-4. Run `./gradlew genSources` to update your source/javadoc jar
-5. Congratulations, you're using this Yarn fork.
+4. Update your gradle.properties or build.gradle to change the mappings version to the current latest (see the above badge)
+5. Run `./gradlew genSources` to update your source/javadoc jar
+6. Congratulations, you're using this Yarn fork.
 
 ## Current Changes
 
